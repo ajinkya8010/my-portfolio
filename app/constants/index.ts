@@ -176,7 +176,7 @@ const projects :{
 	image: string;
 	source_code_link?: string;
 	deploy_link: string;
-	platform: "Renderer" | "Vercel" | "Figma" | "Wordpress" | "Web"
+	platform: "Renderer" | "Vercel" | "Android" | "Web"
 }[] = [
 	{
 		name: "Data-Driven Traffic Analysis System for Pune Municipal Corporation (PMC)",
@@ -217,34 +217,51 @@ const projects :{
 			},
 		],
 		image: "/projectimg/avm.webp",
-		platform: "Wordpress",
-		deploy_link: "https://avmauto.in/",
+		source_code_link: "https://github.com/ajinkya8010/road-traffic-frontend",
+		platform: "Web",
+		deploy_link: "https://avmauto.in/"
 	},
 	{
-		name: "Sparkbright Engineering Portfolio",
+		name: "Fish Species Identification (Fishify)",
 		description:
-			" Designed and developed a visually appealing and user-friendly portfolio website using Next.JS.",
+			"Android app achieving 94.55% accuracy in fish species identification with real-time location-based pricing and edibility information.",
 		tags: [
 			{
-				name: "next",
+				name: "python",
 				color: "red-text-gradient",
 			},
 			{
-				name: "Next UI",
+				name: "deep-learning",
 				color: "orange-text-gradient",
 			},
 			{
-				name: "tailwind",
+				name: "web-scrapping",
 				color: "blue-text-gradient",
 			},
+			{
+				name: "flutter",
+				color: "red-text-gradient",
+			},
+			{
+				name: "flask",
+				color: "orange-text-gradient",
+			},
+			{
+				name: "openai-api",
+				color: "blue-text-gradient",
+			},
+			{
+				name: "mobilenet-v1",
+				color: "blue-text-gradient",
+			}
 		],
 		image: "/projectimg/sparkbright.png",
-		source_code_link: "https://github.com/omunite215/React-Admin-DashBoard",
-		platform: "Web",
+		source_code_link: "https://github.com/ajinkya8010/Fish-Species-Iden-ML",
+		platform: "Android",
 		deploy_link: "https://sparkbright.in/",
 	},
 	{
-		name: "HooBank",
+		name: "HomeSeek: Real Estate Marketplace",
 		description:
 			"A responsive Bank HomePage showcasing different features such as various payment gateways integration, easy money transfer, advanced security, etc. It has a beautiful interface made using Tailwind CSS and React",
 		tags: [
@@ -263,7 +280,7 @@ const projects :{
 		deploy_link: "https://hoobankbyom.netlify.app/",
 	},
 	{
-		name: "MERN Dashboard",
+		name: "RAG App for PDFs",
 		description:
 			" Designed and developed a visually appealing and user-friendly Data Analytics Dashboard using MERN",
 		tags: [
@@ -290,7 +307,7 @@ const projects :{
 		deploy_link: "https://admin-frontend-r705.onrender.com/",
 	},
 	{
-		name: "Metaverse Web 3.0",
+		name: "Auto tab grouper",
 		description:
 			"A Modern UI/UX Landing Page using Framer Motion and TailwindCSS with a feel and looks of Web 3.0",
 		tags: [
@@ -313,7 +330,7 @@ const projects :{
 		deploy_link: "https://project-metaverse-beta.vercel.app/",
 	},
 	{
-		name: "Issue Tracker",
+		name: "Video Translation System (Atlas Copco)",
 		description:
 			"A Next.JS Full Stack Issue Tracker made using Next.Js, ShadCN UI, Prisma, mySQL with latest features like Next.JS Server Components, and Serverless features.",
 		tags: [
