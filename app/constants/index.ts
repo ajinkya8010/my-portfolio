@@ -176,7 +176,7 @@ const projects :{
 	image: string;
 	source_code_link?: string;
 	deploy_link: string;
-	platform: "Renderer" | "Vercel" | "Android" | "Web"
+	platform: "Renderer" | "Vercel" | "Android" | "Web" 
 }[] = [
 	{
 		name: "Data-Driven Traffic Analysis System for Pune Municipal Corporation (PMC)",
@@ -282,29 +282,33 @@ const projects :{
 	{
 		name: "RAG App for PDFs",
 		description:
-			" Designed and developed a visually appealing and user-friendly Data Analytics Dashboard using MERN",
+			"This is a simple Retrieval-Augmented Generation (RAG) application that allows you to upload a PDF, retrieve the most relevant content using semantic similarity, and generate answers using a lightweight LLM. It's built using Sentence Transformers, Qdrant vector store, and a Streamlit UI.",
 		tags: [
 			{
-				name: "react",
+				name: "python",
 				color: "blue-text-gradient",
 			},
 			{
-				name: "materialui",
+				name: "rag",
 				color: "orange-text-gradient",
 			},
 			{
-				name: "MongoDB",
+				name: "streamlit",
 				color: "green-text-gradient",
 			},
 			{
-				name: "Express",
+				name: "qdrant-vector-database",
+				color: "pink-text-gradient",
+			},
+			{
+				name: "qdrant-vector-database",
 				color: "pink-text-gradient",
 			},
 		],
-		image: "/projectimg/mern.png",
-		source_code_link: "https://github.com/omunite215/Project_MERN-Dashboard",
+		image: "/projectimg/rag.png",
+		source_code_link: "https://github.com/ajinkya8010/SIMPLE-RAG-APP",
 		platform: "Web",
-		deploy_link: "https://admin-frontend-r705.onrender.com/",
+		deploy_link: "https://huggingface.co/spaces/ajinkya45/SIMPLE-RAG-PDF",
 	},
 	{
 		name: "Auto tab grouper",
