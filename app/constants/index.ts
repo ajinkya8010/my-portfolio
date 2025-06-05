@@ -179,7 +179,7 @@ const projects :{
 	platform: "Renderer" | "Vercel" | "Android" | "Web" 
 }[] = [
 	{
-		name: "Data-Driven Traffic Analysis System for Pune Municipal Corporation (PMC)",
+		name: "Data-Driven Traffic Analysis System for PMC",
 		description:
 			"A comprehensive web portal for urban traffic analysis integrating real-time insights, citizen reporting, and ML verification to mitigate traffic issues.",
 		tags: [
@@ -299,11 +299,7 @@ const projects :{
 			{
 				name: "qdrant-vector-database",
 				color: "pink-text-gradient",
-			},
-			{
-				name: "qdrant-vector-database",
-				color: "pink-text-gradient",
-			},
+			}
 		],
 		image: "/projectimg/rag.png",
 		source_code_link: "https://github.com/ajinkya8010/SIMPLE-RAG-APP",
@@ -313,24 +309,32 @@ const projects :{
 	{
 		name: "Auto tab grouper",
 		description:
-			"A Modern UI/UX Landing Page using Framer Motion and TailwindCSS with a feel and looks of Web 3.0",
+			"Tab Grouper is a Chrome extension that intelligently organizes your open tabs into semantic groups using a Language Model (LLM). With a single click, it classifies your tabs into meaningful categories like “AI Tools”, “News”, “Docs”, “Entertainment”, and more.",
 		tags: [
 			{
-				name: "react",
+				name: "javascript",
 				color: "blue-text-gradient",
 			},
 			{
-				name: "tailwind",
+				name: "chrome-extension",
 				color: "green-text-gradient",
 			},
 			{
-				name: "framer-motion",
+				name: "LLM",
+				color: "orange-text-gradient",
+			},
+			{
+				name: "prompt-engineering",
+				color: "orange-text-gradient",
+			},
+			{
+				name: "ai-agent",
 				color: "orange-text-gradient",
 			},
 		],
-		image: "/projectimg/metaverse.png",
-		source_code_link: "https://github.com/omunite215/Project_Metaverse",
-		platform: "Vercel",
+		image: "/projectimg/tabg.png",
+		source_code_link: "https://github.com/ajinkya8010/auto-tab-grouper",
+		platform: "Web",
 		deploy_link: "https://project-metaverse-beta.vercel.app/",
 	},
 	{
