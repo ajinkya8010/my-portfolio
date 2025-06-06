@@ -176,7 +176,7 @@ const projects :{
 	image: string;
 	source_code_link?: string;
 	deploy_link: string;
-	platform: "Vercel"| "Web" | "Renderer" | "Github" | "Android"
+	platform: "Vercel"| "Web" | "Render" | "Github" | "Android"
 }[] = [
 	{
 		name: "Data-Driven Traffic Analysis System for PMC",
@@ -263,21 +263,33 @@ const projects :{
 	{
 		name: "HomeSeek: Real Estate Marketplace",
 		description:
-			"A responsive Bank HomePage showcasing different features such as various payment gateways integration, easy money transfer, advanced security, etc. It has a beautiful interface made using Tailwind CSS and React",
+			"A full-stack real estate platform built with React.js, Node.js, and MongoDB, featuring interactive map-based property listings, advanced filtering, and user profile management. ",
 		tags: [
 			{
-				name: "next",
-				color: "green-text-gradient",
+				name: "react.js",
+				color: "red-text-gradient",
 			},
 			{
-				name: "tailwind",
+				name: "node.js",
+				color: "orange-text-gradient",
+			},
+			{
+				name: "mongodb",
 				color: "blue-text-gradient",
 			},
+			{
+				name: "prisma",
+				color: "red-text-gradient",
+			},
+			{
+				name: "jwt",
+				color: "orange-text-gradient",
+			},
 		],
-		image: "/projectimg/hoobank.webp",
-		source_code_link: "https://github.com/omunite215/hoobank",
-		platform: "Vercel",
-		deploy_link: "https://hoobankbyom.netlify.app/",
+		image: "/projectimg/realestate.webp",
+		source_code_link: "https://github.com/ajinkya8010/real-estate-full-stack-app",
+		platform: "Render",
+		deploy_link: "https://real-estate-frontend-59om.onrender.com",
 	},
 	{
 		name: "Ecommerce Frontend",
