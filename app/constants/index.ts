@@ -174,12 +174,12 @@ const projects :{
 		color: string;
 	}[];
 	image: string;
-	source_code_link?: string;
-	deploy_link: string;
-	platform: "Renderer" | "Vercel" | "Figma" | "Wordpress" | "Web"
+	source_code_link: string;
+	deploy_link?: string;
+	platform?: "Vercel"| "Web" | "Render" | "Github" | "Android"
 }[] = [
 	{
-		name: "Data-Driven Traffic Analysis System for Pune Municipal Corporation (PMC)",
+		name: "Data-Driven Traffic Analysis System for PMC",
 		description:
 			"A comprehensive web portal for urban traffic analysis integrating real-time insights, citizen reporting, and ML verification to mitigate traffic issues.",
 		tags: [
@@ -216,128 +216,165 @@ const projects :{
 				color: "white-text-gradient",
 			},
 		],
-		image: "/projectimg/avm.webp",
-		platform: "Wordpress",
-		deploy_link: "https://avmauto.in/",
+		image: "/projectimg/road.webp",
+		source_code_link: "https://github.com/ajinkya8010/road-traffic-frontend",
+		// platform: "Web",
+		// deploy_link: "https://avmauto.in/"
 	},
 	{
-		name: "Sparkbright Engineering Portfolio",
+		name: "Fish Species Identification (Fishify)",
 		description:
-			" Designed and developed a visually appealing and user-friendly portfolio website using Next.JS.",
+			"Android app achieving 94.55% accuracy in fish species identification with real-time location-based pricing and edibility information.",
 		tags: [
 			{
-				name: "next",
+				name: "python",
 				color: "red-text-gradient",
 			},
 			{
-				name: "Next UI",
+				name: "deep-learning",
 				color: "orange-text-gradient",
 			},
 			{
-				name: "tailwind",
-				color: "blue-text-gradient",
-			},
-		],
-		image: "/projectimg/sparkbright.png",
-		source_code_link: "https://github.com/omunite215/React-Admin-DashBoard",
-		platform: "Web",
-		deploy_link: "https://sparkbright.in/",
-	},
-	{
-		name: "HooBank",
-		description:
-			"A responsive Bank HomePage showcasing different features such as various payment gateways integration, easy money transfer, advanced security, etc. It has a beautiful interface made using Tailwind CSS and React",
-		tags: [
-			{
-				name: "next",
-				color: "green-text-gradient",
-			},
-			{
-				name: "tailwind",
-				color: "blue-text-gradient",
-			},
-		],
-		image: "/projectimg/hoobank.webp",
-		source_code_link: "https://github.com/omunite215/hoobank",
-		platform: "Vercel",
-		deploy_link: "https://hoobankbyom.netlify.app/",
-	},
-	{
-		name: "MERN Dashboard",
-		description:
-			" Designed and developed a visually appealing and user-friendly Data Analytics Dashboard using MERN",
-		tags: [
-			{
-				name: "react",
+				name: "web-scrapping",
 				color: "blue-text-gradient",
 			},
 			{
-				name: "materialui",
+				name: "flutter",
+				color: "red-text-gradient",
+			},
+			{
+				name: "flask",
 				color: "orange-text-gradient",
 			},
 			{
-				name: "MongoDB",
+				name: "openai-api",
+				color: "blue-text-gradient",
+			},
+			{
+				name: "mobilenet-v1",
+				color: "blue-text-gradient",
+			}
+		],
+		image: "/projectimg/fish.webp",
+		source_code_link: "https://github.com/ajinkya8010/Fish-Species-Iden-ML",
+		// platform: "Android",
+		// deploy_link: "https://sparkbright.in/",
+	},
+	{
+		name: "HomeSeek: Real Estate Marketplace",
+		description:
+			"A full-stack real estate platform built with React.js, Node.js, and MongoDB, featuring interactive map-based property listings, advanced filtering, and user profile management. ",
+		tags: [
+			{
+				name: "react.js",
+				color: "red-text-gradient",
+			},
+			{
+				name: "node.js",
+				color: "orange-text-gradient",
+			},
+			{
+				name: "mongodb",
+				color: "blue-text-gradient",
+			},
+			{
+				name: "prisma",
+				color: "red-text-gradient",
+			},
+			{
+				name: "jwt",
+				color: "orange-text-gradient",
+			},
+		],
+		image: "/projectimg/realestate.webp",
+		source_code_link: "https://github.com/ajinkya8010/real-estate-full-stack-app",
+		platform: "Render",
+		deploy_link: "https://real-estate-frontend-59om.onrender.com",
+	},
+	{
+		name: "Ecommerce Frontend",
+		description:
+			"A responsive e-commerce frontend built with React and plain CSS, featuring product listings, cart functionality, and a clean user interface",
+		tags: [
+			{
+				name: "react.js",
+				color: "blue-text-gradient",
+			},
+			{
+				name: "css",
 				color: "green-text-gradient",
 			},
 			{
-				name: "Express",
+				name: "javascript",
+				color: "orange-text-gradient",
+			},
+			{
+				name: "context-api",
+				color: "green-text-gradient",
+			},
+		],
+		image: "/projectimg/ec.png",
+		source_code_link: "https://github.com/ajinkya8010/ECommerce-Frontend-React",
+		platform: "Github",
+		deploy_link: "https://ajinkya8010.github.io/ECommerce-Frontend-React/",
+	},
+	{
+		name: "RAG App for PDFs",
+		description:
+			"This is a simple Retrieval-Augmented Generation (RAG) application that allows you to upload a PDF, retrieve the most relevant content using semantic similarity, and generate answers using a lightweight LLM. It's built using Sentence Transformers, Qdrant vector store, and a Streamlit UI.",
+		tags: [
+			{
+				name: "python",
+				color: "blue-text-gradient",
+			},
+			{
+				name: "rag",
+				color: "orange-text-gradient",
+			},
+			{
+				name: "streamlit",
+				color: "green-text-gradient",
+			},
+			{
+				name: "qdrant-vector-database",
 				color: "pink-text-gradient",
-			},
+			}
 		],
-		image: "/projectimg/mern.png",
-		source_code_link: "https://github.com/omunite215/Project_MERN-Dashboard",
+		image: "/projectimg/rag.png",
+		source_code_link: "https://github.com/ajinkya8010/SIMPLE-RAG-APP",
 		platform: "Web",
-		deploy_link: "https://admin-frontend-r705.onrender.com/",
+		deploy_link: "https://huggingface.co/spaces/ajinkya45/SIMPLE-RAG-PDF",
 	},
 	{
-		name: "Metaverse Web 3.0",
+		name: "Auto tab grouper",
 		description:
-			"A Modern UI/UX Landing Page using Framer Motion and TailwindCSS with a feel and looks of Web 3.0",
+			"Tab Grouper is a Chrome extension that intelligently organizes your open tabs into semantic groups using a Language Model (LLM). With a single click, it classifies your tabs into meaningful categories like “AI Tools”, “News”, “Docs”, “Entertainment”, and more.",
 		tags: [
 			{
-				name: "react",
+				name: "javascript",
 				color: "blue-text-gradient",
 			},
 			{
-				name: "tailwind",
+				name: "chrome-extension",
 				color: "green-text-gradient",
 			},
 			{
-				name: "framer-motion",
-				color: "orange-text-gradient",
-			},
-		],
-		image: "/projectimg/metaverse.png",
-		source_code_link: "https://github.com/omunite215/Project_Metaverse",
-		platform: "Vercel",
-		deploy_link: "https://project-metaverse-beta.vercel.app/",
-	},
-	{
-		name: "Issue Tracker",
-		description:
-			"A Next.JS Full Stack Issue Tracker made using Next.Js, ShadCN UI, Prisma, mySQL with latest features like Next.JS Server Components, and Serverless features.",
-		tags: [
-			{
-				name: "next",
-				color: "blue-text-gradient",
-			},
-			{
-				name: "tailwind",
-				color: "green-text-gradient",
-			},
-			{
-				name: "shadCN",
+				name: "LLM",
 				color: "orange-text-gradient",
 			},
 			{
-				name: "mySQL",
-				color: "green-text-gradient",
+				name: "prompt-engineering",
+				color: "orange-text-gradient",
+			},
+			{
+				name: "ai-agent",
+				color: "orange-text-gradient",
 			},
 		],
-		image: "/projectimg/issuetracker.png",
-		source_code_link: "https://github.com/omunite215/Project_Issue-Tracker",
-		platform: "Vercel",
-		deploy_link: "https://project-issue-tracker.vercel.app/",
+		image: "/projectimg/tabg.png",
+		source_code_link: "https://github.com/ajinkya8010/auto-tab-grouper",
+		// platform: "Web",
+		// deploy_link: "https://project-metaverse-beta.vercel.app/",
 	},
 ];
 
