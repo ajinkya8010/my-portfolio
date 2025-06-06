@@ -176,7 +176,7 @@ const projects :{
 	image: string;
 	source_code_link?: string;
 	deploy_link: string;
-	platform: "Renderer" | "Vercel" | "Android" | "Web" 
+	platform: "Vercel"| "Web" | "Renderer" | "Github" | "Android"
 }[] = [
 	{
 		name: "Data-Driven Traffic Analysis System for PMC",
@@ -280,6 +280,33 @@ const projects :{
 		deploy_link: "https://hoobankbyom.netlify.app/",
 	},
 	{
+		name: "Ecommerce Frontend",
+		description:
+			"A responsive e-commerce frontend built with React and plain CSS, featuring product listings, cart functionality, and a clean user interface",
+		tags: [
+			{
+				name: "react.js",
+				color: "blue-text-gradient",
+			},
+			{
+				name: "css",
+				color: "green-text-gradient",
+			},
+			{
+				name: "javascript",
+				color: "orange-text-gradient",
+			},
+			{
+				name: "context-api",
+				color: "green-text-gradient",
+			},
+		],
+		image: "/projectimg/ec.png",
+		source_code_link: "https://github.com/ajinkya8010/ECommerce-Frontend-React",
+		platform: "Github",
+		deploy_link: "https://ajinkya8010.github.io/ECommerce-Frontend-React/",
+	},
+	{
 		name: "RAG App for PDFs",
 		description:
 			"This is a simple Retrieval-Augmented Generation (RAG) application that allows you to upload a PDF, retrieve the most relevant content using semantic similarity, and generate answers using a lightweight LLM. It's built using Sentence Transformers, Qdrant vector store, and a Streamlit UI.",
@@ -336,33 +363,6 @@ const projects :{
 		source_code_link: "https://github.com/ajinkya8010/auto-tab-grouper",
 		platform: "Web",
 		deploy_link: "https://project-metaverse-beta.vercel.app/",
-	},
-	{
-		name: "Video Translation System (Atlas Copco)",
-		description:
-			"A Next.JS Full Stack Issue Tracker made using Next.Js, ShadCN UI, Prisma, mySQL with latest features like Next.JS Server Components, and Serverless features.",
-		tags: [
-			{
-				name: "next",
-				color: "blue-text-gradient",
-			},
-			{
-				name: "tailwind",
-				color: "green-text-gradient",
-			},
-			{
-				name: "shadCN",
-				color: "orange-text-gradient",
-			},
-			{
-				name: "mySQL",
-				color: "green-text-gradient",
-			},
-		],
-		image: "/projectimg/issuetracker.png",
-		source_code_link: "https://github.com/omunite215/Project_Issue-Tracker",
-		platform: "Vercel",
-		deploy_link: "https://project-issue-tracker.vercel.app/",
 	},
 ];
 
