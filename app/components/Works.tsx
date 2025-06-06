@@ -17,9 +17,9 @@ type ProjectCardProps = {
 		color: string;
 	}[];
 	image: string;
-	source_code_link?: string;
-	deploy_link: string;
-	platform: "Netlify" | "Vercel" | "Figma" | "Wordpress" | "Web" | "Renderer"
+	source_code_link: string;
+	deploy_link?: string;
+	platform?: "Vercel"| "Web" | "Render" | "Github" | "Android"
 };
 
 const ProjectCard = ({
@@ -65,19 +65,21 @@ const ProjectCard = ({
 								className="object-contain"
 							/>
 						</Link>}
+						{deploy_link && platform &&(
 						<Link
 							href={deploy_link}
 							target="_blank"
 							className="black-gradient w-10 h-10 ml-2 rounded-full flex justify-center items-center cursor-pointer"
 						>
 							<Image
-								src={platform === "Netlify" ? "/tech/netlify.webp" : platform === "Vercel" ? "/tech/vercel.svg" : platform === "Wordpress" ? "/tech/wordpress.webp" : platform === "Web" ? "/web.webp" : "/tech/figma.webp"}
+								src={platform === "Vercel" ? "/tech/vercel.svg" : platform === "Web" ? "/web.webp" : platform ==="Github" ? "/tech/github.webp": "/tech/renderer.webp"}
 								width={24}
 								height={24}
 								alt="source code"
 								className="object-contain"
 							/>
 						</Link>
+						)}
 					</div>
 				</div>
 
