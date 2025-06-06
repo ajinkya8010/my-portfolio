@@ -174,9 +174,9 @@ const projects :{
 		color: string;
 	}[];
 	image: string;
-	source_code_link?: string;
-	deploy_link: string;
-	platform: "Vercel"| "Web" | "Render" | "Github" | "Android"
+	source_code_link: string;
+	deploy_link?: string;
+	platform?: "Vercel"| "Web" | "Render" | "Github" | "Android"
 }[] = [
 	{
 		name: "Data-Driven Traffic Analysis System for PMC",
@@ -216,10 +216,10 @@ const projects :{
 				color: "white-text-gradient",
 			},
 		],
-		image: "/projectimg/avm.webp",
+		image: "/projectimg/road.webp",
 		source_code_link: "https://github.com/ajinkya8010/road-traffic-frontend",
-		platform: "Web",
-		deploy_link: "https://avmauto.in/"
+		// platform: "Web",
+		// deploy_link: "https://avmauto.in/"
 	},
 	{
 		name: "Fish Species Identification (Fishify)",
@@ -255,10 +255,10 @@ const projects :{
 				color: "blue-text-gradient",
 			}
 		],
-		image: "/projectimg/sparkbright.png",
+		image: "/projectimg/fish.webp",
 		source_code_link: "https://github.com/ajinkya8010/Fish-Species-Iden-ML",
-		platform: "Android",
-		deploy_link: "https://sparkbright.in/",
+		// platform: "Android",
+		// deploy_link: "https://sparkbright.in/",
 	},
 	{
 		name: "HomeSeek: Real Estate Marketplace",
@@ -373,8 +373,8 @@ const projects :{
 		],
 		image: "/projectimg/tabg.png",
 		source_code_link: "https://github.com/ajinkya8010/auto-tab-grouper",
-		platform: "Web",
-		deploy_link: "https://project-metaverse-beta.vercel.app/",
+		// platform: "Web",
+		// deploy_link: "https://project-metaverse-beta.vercel.app/",
 	},
 ];
 
