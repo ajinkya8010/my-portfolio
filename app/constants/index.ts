@@ -197,7 +197,7 @@ const projects :{
 			},
 			{
 				name: "node.js",
-				color: "yellow-text-gradient",
+				color: "gold-text-gradient",
 			},
 			{
 				name: "google-maps-api",
@@ -205,15 +205,11 @@ const projects :{
 			},
 			{
 				name: "tensorflow",
-				color: "violet-text-gradient",
+				color: "purple-text-gradient",
 			},
 			{
 				name: "flask",
-				color: "brown-text-gradient",
-			},
-			{
-				name: "cloudinary",
-				color: "white-text-gradient",
+				color: "pink-text-gradient",
 			},
 		],
 		image: "/projectimg/road.webp",
@@ -240,19 +236,19 @@ const projects :{
 			},
 			{
 				name: "flutter",
-				color: "red-text-gradient",
+				color: "pink-text-gradient",
 			},
 			{
 				name: "flask",
-				color: "orange-text-gradient",
+				color: "green-text-gradient",
 			},
 			{
 				name: "openai-api",
-				color: "blue-text-gradient",
+				color: "gold-text-gradient",
 			},
 			{
 				name: "mobilenet-v1",
-				color: "blue-text-gradient",
+				color: "sunset-text-gradient",
 			}
 		],
 		image: "/projectimg/fish.webp",
@@ -263,11 +259,11 @@ const projects :{
 	{
 		name: "HomeSeek: Real Estate Marketplace",
 		description:
-			"A full-stack real estate platform built with React.js, Node.js, and MongoDB, featuring interactive map-based property listings, advanced filtering, and user profile management. ",
+			"A full-stack real estate platform built with React.js, Node.js, and MongoDB, featuring interactive map-based property listings, advanced filtering, etc. ",
 		tags: [
 			{
 				name: "react.js",
-				color: "red-text-gradient",
+				color: "pink-text-gradient",
 			},
 			{
 				name: "node.js",
@@ -279,11 +275,11 @@ const projects :{
 			},
 			{
 				name: "prisma",
-				color: "red-text-gradient",
+				color: "green-text-gradient",
 			},
 			{
 				name: "jwt",
-				color: "orange-text-gradient",
+				color: "purple-text-gradient",
 			},
 		],
 		image: "/projectimg/realestate.webp",
@@ -294,7 +290,7 @@ const projects :{
 	{
 		name: "Ecommerce Frontend",
 		description:
-			"A responsive e-commerce frontend built with React and plain CSS, featuring product listings, cart functionality, and a clean user interface",
+			"A responsive e-commerce frontend built with React and plain CSS, featuring product listings, cart functionality, and a clean user interface. First project in my journey of web development.",
 		tags: [
 			{
 				name: "react.js",
@@ -310,7 +306,11 @@ const projects :{
 			},
 			{
 				name: "context-api",
-				color: "green-text-gradient",
+				color: "gold-text-gradient",
+			},
+			{
+				name: "state-management",
+				color: "pink-text-gradient",
 			},
 		],
 		image: "/projectimg/ec.png",
@@ -321,7 +321,7 @@ const projects :{
 	{
 		name: "RAG App for PDFs",
 		description:
-			"This is a simple Retrieval-Augmented Generation (RAG) application that allows you to upload a PDF, retrieve the most relevant content using semantic similarity, and generate answers using a lightweight LLM. It's built using Sentence Transformers, Qdrant vector store, and a Streamlit UI.",
+			"This is a simple Retrieval-Augmented Generation (RAG) application that allows you to upload a PDF, retrieve the most relevant content using semantic similarity, and generate answers using a lightweight LLM.",
 		tags: [
 			{
 				name: "python",
@@ -348,7 +348,7 @@ const projects :{
 	{
 		name: "Auto tab grouper",
 		description:
-			"Tab Grouper is a Chrome extension that intelligently organizes your open tabs into semantic groups using a Language Model (LLM). With a single click, it classifies your tabs into meaningful categories like “AI Tools”, “News”, “Docs”, “Entertainment”, and more.",
+			"Chrome extension that intelligently organizes your open tabs into semantic groups using an LLM. With a single click, it classifies tabs into meaningful categories like “AI Tools”, “News”, “Docs”, “Entertainment”, and more.",
 		tags: [
 			{
 				name: "javascript",
@@ -364,11 +364,11 @@ const projects :{
 			},
 			{
 				name: "prompt-engineering",
-				color: "orange-text-gradient",
+				color: "pink-text-gradient",
 			},
 			{
 				name: "ai-agent",
-				color: "orange-text-gradient",
+				color: "purple-text-gradient",
 			},
 		],
 		image: "/projectimg/tabg.png",
