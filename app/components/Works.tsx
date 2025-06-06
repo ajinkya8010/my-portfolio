@@ -17,9 +17,9 @@ type ProjectCardProps = {
 		color: string;
 	}[];
 	image: string;
-	source_code_link?: string;
-	deploy_link: string;
-	platform: "Vercel"| "Web" | "Render" | "Github" | "Android"
+	source_code_link: string;
+	deploy_link?: string;
+	platform?: "Vercel"| "Web" | "Render" | "Github" | "Android"
 };
 
 const ProjectCard = ({
@@ -65,6 +65,7 @@ const ProjectCard = ({
 								className="object-contain"
 							/>
 						</Link>}
+						{deploy_link && platform &&(
 						<Link
 							href={deploy_link}
 							target="_blank"
@@ -78,6 +79,7 @@ const ProjectCard = ({
 								className="object-contain"
 							/>
 						</Link>
+						)}
 					</div>
 				</div>
 
