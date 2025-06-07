@@ -46,7 +46,7 @@ const About = () => {
 	return (
 		<>
 			<motion.div variants={textVariant()}>
-				<p className="sectionSubText">Introduction</p>
+				<h2 className="sectionHeadText text-center">Introduction</h2>
 			</motion.div>
 
 			<motion.p
@@ -54,7 +54,7 @@ const About = () => {
 				className="mt-4 text-secondary text-[17px] max-w-[3xl] leading-[30px]"
 			>
 				AI-Powered Full-Stack Developer with a passion for building intelligent, user-centric applications. 
-				Experienced in crafting modern web solutions using Next.js, Node.js, and MongoDB. 
+				Experienced in crafting modern web solutions using MERN stack, Next.js, etc. 
 				Enthusiastic about integrating AI technologies like RAG, NLP, and AI agents into real-world platforms. 
 				Strong problem-solver with a keen interest in scalable systems and innovative digital experiences.
 
