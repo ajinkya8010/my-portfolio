@@ -43,9 +43,9 @@ const Navbar = () => {
 				>
 					<Link href="/">
 						<Image
-							src="/logo.png"
-							width={80}
-							height={80}
+							src="/logo.webp"
+							width={70}
+							height={70}
 							alt="logo"
 							priority
 							className="object-contain"
