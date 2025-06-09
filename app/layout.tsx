@@ -1,8 +1,9 @@
-import type { Metadata } from "next";
+
 import { Poppins as FontSans } from "next/font/google";
 import "@/app/styles/globals.css";
 import { Toaster } from "react-hot-toast";
-import { url } from "inspector";
+import Script from "next/script";
+
 
 const fontSans = FontSans({
   subsets: ["latin"],
@@ -53,6 +54,16 @@ export default function RootLayout({
     <html lang="en">
       <body className={fontSans.variable}>
         <Toaster position="top-right" reverseOrder={false} />
+		{/* Google Analytics */}
+        <Script src="https://www.googletagmanager.com/gtag/js?id=G-38Y469610K" strategy="afterInteractive" />
+        <Script id="google-analytics" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-38Y469610K');
+          `}
+        </Script>
         {children}
       </body>
     </html>
