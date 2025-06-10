@@ -21,15 +21,25 @@ const Hero = () => {
       </div>
 
       {/* Centered GIF */}
-      <div className="absolute inset-0 flex justify-center items-center pointer-events-none mt-32">
-        <Image
+      <div className="absolute inset-0 flex justify-center items-center pointer-events-none mt-36">
+        {/* <Image
           src="/setup.gif"
           alt="Hero Animation"
           width={500}
           height={500}
           className="object-contain mix-blend-screen"
           unoptimized={true}
-        />
+        /> */}
+        <video
+          autoPlay
+          loop
+          muted
+          playsInline
+          className="object-contain mix-blend-screen w-[500px] h-[500px]"
+        >
+          <source src="/setup.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
       </div>
 
       {/* <ComputersCanvas /> */}
@@ -49,6 +59,22 @@ const Hero = () => {
           </div>
         </a>
       </div> */}
+      <div className="absolute xs:bottom-10 bottom-32 w-full flex justify-center items-center">
+        <a href="#about" className="group">
+          <motion.div
+            animate={{ y: [0, 8, 0] }}
+            transition={{
+              duration: 2,
+              repeat: Number.POSITIVE_INFINITY,
+              ease: "easeInOut",
+            }}
+            className="flex flex-col items-center space-y-2 cursor-pointer"
+          >
+            {/* Simple down arrow */}
+            <div className="w-4 h-4 border-r-2 border-b-2 border-secondary/70 group-hover:border-secondary transform rotate-45 transition-colors duration-300" />
+          </motion.div>
+        </a>
+      </div>
     </section>
   );
 };
