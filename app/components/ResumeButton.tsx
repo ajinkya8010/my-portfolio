@@ -21,20 +21,6 @@ const ResumeButton = () => {
       icon: '💻',
       color: 'hover:bg-green-50 hover:text-green-700'
     },
-    { 
-      id: 'frontend', 
-      label: 'Frontend Developer', 
-      path: '/resume/Resume-Frontend.pdf',
-      icon: '🎨',
-      color: 'hover:bg-purple-50 hover:text-purple-700'
-    },
-    { 
-      id: 'backend', 
-      label: 'Backend Developer', 
-      path: '/resume/Resume-Backend.pdf',
-      icon: '⚙️',
-      color: 'hover:bg-orange-50 hover:text-orange-700'
-    },
   ];
 
   const handleResumeDownload = (resumePath: string, resumeLabel: string) => {
