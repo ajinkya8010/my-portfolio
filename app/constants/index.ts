@@ -23,12 +23,12 @@ export const navLinks = [
 
 const services = [
 	{
-		title: "AI Developer",
-		icon: "/backend.webp",
-	},
-	{
 		title: "Full Stack Web Developer",
 		icon: "/web.webp",
+	},
+	{
+		title: "AI Developer",
+		icon: "/backend.webp",
 	},
 	{
 		title: "Researcher",
@@ -115,13 +115,13 @@ const experiences = [
 ];
 
 const testimonials = [
-	{
+		{
 		id: 1,
 		testimonial:
-			"GeeksforGeeks is a platform that contains well-explained Computer Science concepts, coding practice, and quizzes.",
-		name: "ajinkyawalunj45",
-		image: "/tech/gfg.svg",
-		link: "https://www.geeksforgeeks.org/user/ajinkyawalunj45",
+			"Feel free to explore my GitHub profile, where I showcase a wide range of projects that solve various problems using different technologies.",
+		name: "ajinkya8010",
+		image: "/tech/github.webp",
+		link: "https://github.com/ajinkya8010",
 	},
 	{
 		id: 2,
@@ -150,10 +150,10 @@ const testimonials = [
 	{
 		id: 5,
 		testimonial:
-			"Feel free to explore my GitHub profile, where I showcase a wide range of projects that solve various problems using different technologies.",
-		name: "ajinkya8010",
-		image: "/tech/github.webp",
-		link: "https://github.com/ajinkya8010",
+			"GeeksforGeeks is a platform that contains well-explained Computer Science concepts, coding practice, and quizzes.",
+		name: "ajinkyawalunj45",
+		image: "/tech/gfg.svg",
+		link: "https://www.geeksforgeeks.org/user/ajinkyawalunj45",
 	},
 	{
 		id: 6,
