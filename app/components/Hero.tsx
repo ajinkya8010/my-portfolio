@@ -35,6 +35,7 @@ const Hero = () => {
           loop
           muted
           playsInline
+          preload="auto"
           className="object-contain mix-blend-screen w-[500px] h-[500px]"
         >
           <source src="/setup.mp4" type="video/mp4" />
