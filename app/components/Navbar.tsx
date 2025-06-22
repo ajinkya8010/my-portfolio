@@ -6,7 +6,6 @@ import { useEffect, useState } from "react";
 import ResumeButton from "./ResumeButton";
 
 const Navbar = () => {
-  const [active, setActive] = useState("");
   const [toggle, setToggle] = useState(false);
   const [scrolled, setScrolled] = useState(false);
 
@@ -36,8 +35,7 @@ const Navbar = () => {
         {/* biome-ignore lint/a11y/useKeyWithClickEvents: <explanation> */}
         <div
           className="flex items-center gap-2 group cursor-pointer"
-          onClick={() => {
-            setActive("");
+          onClick={() => {7
             window.scrollTo(0, 0);
           }}
         >
@@ -76,9 +74,8 @@ const Navbar = () => {
             <li
               key={nav.id}
               className={`${
-                active === nav.title ? "text-white" : "text-secondary"
+               "text-secondary"
               } hover:text-white text-[18px] font-medium cursor-pointer`}
-              onClick={() => setActive(nav.title)}
             >
               {nav.title.toLowerCase() === "blogs" ? (
                 <Link href="/blog">{nav.title}</Link> // Navigate to /blog
@@ -114,11 +111,10 @@ const Navbar = () => {
                 <li
                   key={nav.id}
                   className={`font-poppins font-medium cursor-pointer text-[16px] ${
-                    active === nav.title ? "text-white" : "text-secondary"
+                  "text-secondary"
                   }`}
                   onClick={() => {
                     setToggle(!toggle);
-                    setActive(nav.title);
                   }}
                 >
                   <Link href={`#${nav.id}`}>{nav.title}</Link>
