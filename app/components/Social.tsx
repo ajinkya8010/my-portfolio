@@ -6,6 +6,7 @@ import Link from "next/link";
 import { socialLinks } from "../constants";
 import { fadeIn } from "@/app/utils/motion";
 import { useState, useEffect, useMemo } from "react";
+import SectionWrapper from "./HigherOrderComponents/SectionWrapper";
 
 type SocialCardProps = {
   index: number;
@@ -130,4 +131,4 @@ const SocialLinks = () => {
   );
 };
 
-export default SocialLinks;
+export default SectionWrapper(SocialLinks, "sociallinks");
