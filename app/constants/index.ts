@@ -107,9 +107,9 @@ const experiences = [
 		iconBg: "#ffffff",
 		date: "2025 -  present",
 		points: [
-			"Gained hands-on experience using Drupal as a headless CMS and integrated it with modern frontend technologies like Next.js to build dynamic and scalable web applications.",
-			"Developed intelligent solutions by integrating Retrieval-Augmented Generation (RAG) systems and AI agents, contributing to smarter content delivery and automation in web platforms.",
-			"Participated in team stand-ups, code reviews, and sprint planning, improving code quality through collaboration while gaining exposure to real-world development workflows and Git version control.",
+			"Contributed to Drupal Core with multiple merge requests, including bug fixes and new features.",
+			"Developed headless CMS solutions by integrating Drupal with modern frontends like Next.js for dynamic web applications",
+			"Built intelligent content systems using Retrieval-Augmented Generation (RAG) and AI agents, improving content delivery and automation for web applications",
 		],
 	},
 ];
