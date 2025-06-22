@@ -1,7 +1,7 @@
 export const navLinks = [
 	{
 		id: "about",
-		title: "About",
+		title: "Myself",
 	},
 	{
 		id: "work",
@@ -162,6 +162,54 @@ const testimonials = [
 		name: "jinks4518",
 		image: "/socialmedia/x.svg",
 		link: "https://x.com/jinks4518",
+	},
+];
+
+
+
+export const socialLinks = [
+  {
+    id: 1,
+    name: "ajinkya8010",
+    platform: "GitHub",
+    link: "https://github.com/ajinkya8010",
+    image: "/tech/github.webp"
+  },
+  {
+    id: 2,
+    name: "ajinkya-walunj",
+    platform: "LinkedIn",
+    link: "https://www.linkedin.com/in/ajinkya-walunj",
+    image: "/socialmedia/linkedin.svg"
+  },
+  {		
+		id: 3,
+		name: "ajinkya45",
+		platform: "LeetCode",
+		link: "https://leetcode.com/u/ajinkya45",
+		image: "/tech/lc.svg",
+	},
+	{
+		id: 4,
+		name: "ajinkyawalunj",
+		platform: "Kaggle",
+		link: "https://www.kaggle.com/ajinkyawalunj",
+		image: "/tech/kaggle.svg",
+	},
+	{
+		id: 5,
+		name: "ajinkyawalunj45",
+		platform: "GeeksforGeeks",
+		link: "https://www.geeksforgeeks.org/user/ajinkyawalunj45",
+		image: "/tech/gfg.svg",
+
+	},
+	{
+		id: 6,
+		name: "jinks4518",
+		platform: "Twitter (X)",
+		link: "https://x.com/jinks4518",
+		image: "/socialmedia/x.svg",
 	},
 ];
 
@@ -377,5 +425,6 @@ const projects :{
 		// deploy_link: "https://project-metaverse-beta.vercel.app/",
 	},
 ];
+
 
 export { services, technologies, experiences, testimonials, projects };
