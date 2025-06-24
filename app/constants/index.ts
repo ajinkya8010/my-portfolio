@@ -13,7 +13,7 @@ export const navLinks = [
 	},
 	{
 		id: "feedbacks",
-		title: "Testimonials",
+		title: "Recognitions",
 	},
 	{
 		id: "contact",
@@ -122,10 +122,45 @@ const testimonials = [
 	{
 		id: 1,
 		testimonial:
-			"Youe creativity and dedication have been instrumental in the project's success. Your efforts are highly valued and appreciated.",
+			"Your creativity and dedication have been instrumental in the project's success. Your efforts are highly valued and appreciated.",
 		name: "Atlas Copco",
-		image: "/tech/github.webp",
 		link: "https://drive.google.com/file/d/1DrfnyT3F1r8HQT9Q4SWon2BOyTLuWjIV/view?usp=sharing",
+	},
+	{
+		id: 2,
+		testimonial:
+			"Successfully completed project on 'Data-Driven Traffic Analysis System for PMC' assigned by Pune Municipal Corporation (PMC)",
+		name: "PMC",
+		image: "/tech/github.webp",
+		link: "https://drive.google.com/file/d/1plJDBN2K8ApQcQB-VnqskvKeUrS2PBXN/view?usp=sharing",
+	},
+	{
+		id: 3,
+		testimonial:
+			'"Fishify: A Mobile-Based Fish Species Identification App with Transfer Learning Using MobileNetV1" Published by Springer"',
+		name: "Springer",
+		link: "https://link.springer.com/chapter/10.1007/978-981-97-1323-3_34",
+	},
+	{
+		id: 4,
+		testimonial:
+			"“Edu-lingo: A Unified NLP Video System with Comprehensive Multilingual Subtitles”, published as research by IEEE in IEEE Xplore",
+		name: "IEEE",
+		link: "https://ieeexplore.ieee.org/document/10594128",
+	},
+	{
+		id: 5,
+		testimonial:
+			"“MediAI: An AI Based Guide for Medical Content Authenticity Analysis”, published as research by IEEE in IEEE Xplore",
+		name: "IEEE",
+		link: "https://ieeexplore.ieee.org/abstract/document/10882352",
+	},
+	{
+		id: 6,
+		testimonial:
+			"Ajinkya scored 100% marks in the final assessment and is a top performer in the training on Web development",
+		name: "Internshala",
+		link: "https://drive.google.com/file/d/1qT0OnFDAfpSWQQxs0pxid4tw1uS3IP8N/view?usp=sharing",
 	},
 	// {
 	// 	id: 2,

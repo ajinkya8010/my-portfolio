@@ -85,7 +85,6 @@ type FeedbackCardProps = {
 	testimonial: string;
 	name: string;
 	link?: string; // optional
-	image: string;
 };
 
 const FeedbackCard = ({
@@ -129,7 +128,7 @@ const Feedbacks = () => {
 		<div className="mt-12 bg-black-100 rounded-[20px]">
 			<div className="padding bg-tertiary rounded-2xl min-h-[300px]">
 				<motion.div variants={textVariant()}>
-					<h2 className="sectionHeadText">Testimonials</h2>
+					<h2 className="sectionHeadText">Recognitions</h2>
 					<p className="sectionSubText">
 						Click on card to check out (If available)..
 					</p>
