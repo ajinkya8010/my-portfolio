@@ -12,7 +12,7 @@ export const navLinks = [
 		title: "Projects",
 	},
 	{
-		id: "testimonials",
+		id: "feedbacks",
 		title: "Testimonials",
 	},
 	{
@@ -119,7 +119,7 @@ const experiences = [
 ];
 
 const testimonials = [
-		{
+	{
 		id: 1,
 		testimonial:
 			"Youe creativity and dedication have been instrumental in the project's success. Your efforts are highly valued and appreciated.",

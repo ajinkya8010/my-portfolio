@@ -131,7 +131,7 @@ const Feedbacks = () => {
 				<motion.div variants={textVariant()}>
 					<h2 className="sectionHeadText">Testimonials</h2>
 					<p className="sectionSubText">
-						Click on card to check out..
+						Click on card to check out (If available)..
 					</p>
 				</motion.div>
 			</div>
@@ -144,5 +144,5 @@ const Feedbacks = () => {
 	);
 };
 
-export default SectionWrapper(Feedbacks, "");
+export default SectionWrapper(Feedbacks, "feedbacks");
 
