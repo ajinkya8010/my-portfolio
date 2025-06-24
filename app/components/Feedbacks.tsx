@@ -56,7 +56,7 @@ const Feedbacks = () => {
 		<div className="mt-12 bg-black-100 rounded-[20px]">
 			<div className="padding bg-tertiary rounded-2xl min-h-[300px]">
 				<motion.div variants={textVariant()}>
-					<h2 className="sectionHeadText">Social | Coding Profiles</h2>
+					<h2 className="sectionHeadText">Testimonials</h2>
 					<p className="sectionSubText">
 						Click on icon to check out..
 					</p>
