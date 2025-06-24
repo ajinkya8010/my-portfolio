@@ -127,46 +127,46 @@ const testimonials = [
 		image: "/tech/github.webp",
 		link: "https://drive.google.com/file/d/1DrfnyT3F1r8HQT9Q4SWon2BOyTLuWjIV/view?usp=sharing",
 	},
-	{
-		id: 2,
-		testimonial:
-			"LinkedIn is a business and employment-focused social media platform that works through websites and mobile apps.",
-		name: "Ajinkya Walunj",
-		image: "/socialmedia/linkedin.svg",
-		link: "https://www.linkedin.com/in/ajinkya-walunj",
-	},
-	{
-		id: 3,
-		testimonial:
-			"LeetCode: Platform for coding practice, DSA, and interviews. Also provides a community for discussions and solutions.",
-		name: "ajinkya45",
-		image: "/tech/lc.svg",
-		link: "https://leetcode.com/u/ajinkya45",
-	},
-	{
-		id: 4,
-		testimonial:
-			"Kaggle is a platform for Data Science and ML that enables users to explore datasets, run code, and take part in competitions.",
-		name: "ajinkyawalunj",
-		image: "/tech/kaggle.svg",
-		link: "https://www.kaggle.com/ajinkyawalunj",
-	},
-	{
-		id: 5,
-		testimonial:
-			"GeeksforGeeks is a platform that contains well-explained Computer Science concepts, coding practice, and quizzes.",
-		name: "ajinkyawalunj45",
-		image: "/tech/gfg.svg",
-		link: "https://www.geeksforgeeks.org/user/ajinkyawalunj45",
-	},
-	{
-		id: 6,
-		testimonial:
-			"Twitter (now X) is a social media platform for real-time updates, news, and short content, allowing users to post and interact.",
-		name: "jinks4518",
-		image: "/socialmedia/x.svg",
-		link: "https://x.com/jinks4518",
-	},
+	// {
+	// 	id: 2,
+	// 	testimonial:
+	// 		"LinkedIn is a business and employment-focused social media platform that works through websites and mobile apps.",
+	// 	name: "Ajinkya Walunj",
+	// 	image: "/socialmedia/linkedin.svg",
+	// 	link: "https://www.linkedin.com/in/ajinkya-walunj",
+	// },
+	// {
+	// 	id: 3,
+	// 	testimonial:
+	// 		"LeetCode: Platform for coding practice, DSA, and interviews. Also provides a community for discussions and solutions.",
+	// 	name: "ajinkya45",
+	// 	image: "/tech/lc.svg",
+	// 	link: "https://leetcode.com/u/ajinkya45",
+	// },
+	// {
+	// 	id: 4,
+	// 	testimonial:
+	// 		"Kaggle is a platform for Data Science and ML that enables users to explore datasets, run code, and take part in competitions.",
+	// 	name: "ajinkyawalunj",
+	// 	image: "/tech/kaggle.svg",
+	// 	link: "https://www.kaggle.com/ajinkyawalunj",
+	// },
+	// {
+	// 	id: 5,
+	// 	testimonial:
+	// 		"GeeksforGeeks is a platform that contains well-explained Computer Science concepts, coding practice, and quizzes.",
+	// 	name: "ajinkyawalunj45",
+	// 	image: "/tech/gfg.svg",
+	// 	link: "https://www.geeksforgeeks.org/user/ajinkyawalunj45",
+	// },
+	// {
+	// 	id: 6,
+	// 	testimonial:
+	// 		"Twitter (now X) is a social media platform for real-time updates, news, and short content, allowing users to post and interact.",
+	// 	name: "jinks4518",
+	// 	image: "/socialmedia/x.svg",
+	// 	link: "https://x.com/jinks4518",
+	// },
 ];
 
 
