@@ -12,6 +12,10 @@ export const navLinks = [
 		title: "Projects",
 	},
 	{
+		id: "testimonials",
+		title: "Testimonials",
+	},
+	{
 		id: "contact",
 		title: "Contact",
 	},
@@ -118,10 +122,10 @@ const testimonials = [
 		{
 		id: 1,
 		testimonial:
-			"Feel free to explore my GitHub profile, where I showcase a wide range of projects that solve various problems using different technologies.",
-		name: "ajinkya8010",
+			"Youe creativity and dedication have been instrumental in the project's success. Your efforts are highly valued and appreciated.",
+		name: "Atlas Copco",
 		image: "/tech/github.webp",
-		link: "https://github.com/ajinkya8010",
+		link: "https://drive.google.com/file/d/1DrfnyT3F1r8HQT9Q4SWon2BOyTLuWjIV/view?usp=sharing",
 	},
 	{
 		id: 2,
