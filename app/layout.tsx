@@ -126,6 +126,49 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
+         <meta
+          name="keywords"
+          content="Ajinkya Walunj, Ajinkya Walunj portfolio, Full stack developer, MERN developer, Next.js developer, React developer India, Machine learning projects, AI portfolio, Node.js developer, hire full stack developer"
+        />
+
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: `
+        {
+          "@context": "https://schema.org",
+          "@type": "Person",
+          "name": "Ajinkya Walunj",
+          "url": "https://ajinkyawalunj.me",
+          "sameAs": [
+            "https://github.com/ajinkya8010",
+            "https://linkedin.com/in/ajinkya-walunj",
+            "https://x.com/jinks4518"
+          ],
+          "jobTitle": "Full-Stack Developer",
+          "worksFor": {
+            "@type": "Organization",
+            "name": "Ajinkya Walunj Portfolio"
+          },
+          "knowsAbout": [
+            "Machine Learning",
+            "React.js",
+            "Node.js",
+            "AI",
+            "Software Development",
+            "Full Stack Development",
+            "MERN Stack",
+            "JavaScript",
+            "TypeScript",
+            "Express.js",
+            "MongoDB",
+            "AI Agents",
+            "RAG",
+            "NLP",
+            "Web Development",
+            "Frontend Development",
+            "Next.js"
+          ]
+        }
+      ` }} />
+
         {/* Preload critical font weights for hero text */}
         <link
           rel="preload"
