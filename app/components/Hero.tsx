@@ -1,10 +1,17 @@
 "use client";
 import { motion } from "framer-motion";
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { ComputersCanvas } from "./canvas";
 import Image from "next/image";
 
 const Hero = () => {
+  const [showVideo, setShowVideo] = useState(false);
+
+  useEffect(() => {
+    const timer = setTimeout(() => setShowVideo(true), 1000); // ⏳ Delay video by 1s
+    return () => clearTimeout(timer);
+  }, []);
+
   return (
     <section className="relative w-full h-screen mx-auto">
       <div className="paddingX absolute inset-0 top-[120px] max-w-7xl mx-auto flex flex-row items-start gap-5">
@@ -13,16 +20,17 @@ const Hero = () => {
           <div className="w-1 sm:h-80 h-40 violet-gradient" />
         </div>
         <div>
-          <h1 className="heroHeadText text-white">
-            Hi, I&apos;m <span className="text-[#915EFF] ">Ajinkya</span>
+          <h1 className="heroHeadText text-white !leading-tight !text-4xl sm:!text-5xl md:!text-6xl lg:!text-7xl font-extrabold">
+            Hi, I&apos;m <span className="text-[#915EFF]">Ajinkya</span>
           </h1>
           <p className="heroSubText">Lifelong Tech Learner</p>
         </div>
       </div>
 
       {/* Centered GIF */}
-      <div className="absolute inset-0 flex justify-center items-center pointer-events-none mt-36">
-        {/* <Image
+      {showVideo && (
+        <div className="absolute inset-0 flex justify-center items-center pointer-events-none mt-36">
+          {/* <Image
           src="/setup.gif"
           alt="Hero Animation"
           width={500}
@@ -30,18 +38,20 @@ const Hero = () => {
           className="object-contain mix-blend-screen"
           unoptimized={true}
         /> */}
-        <video
-          autoPlay
-          loop
-          muted
-          playsInline
-          preload="auto"
-          className="object-contain mix-blend-screen w-[500px] h-[500px]"
-        >
-          <source src="/setup.mp4" type="video/mp4" />
-          Your browser does not support the video tag.
-        </video>
-      </div>
+          <video
+            autoPlay
+            loop
+            muted
+            playsInline
+            preload="auto"
+            poster="/fallback.jpg"
+            className="object-contain mix-blend-screen w-[500px] h-[500px]"
+          >
+            <source src="/setup.mp4" type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
+        </div>
+      )}
 
       {/* <ComputersCanvas /> */}
 
