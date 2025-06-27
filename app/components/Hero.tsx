@@ -8,8 +8,11 @@ const Hero = () => {
   const [showVideo, setShowVideo] = useState(false);
 
   useEffect(() => {
-    const timer = setTimeout(() => setShowVideo(true), 1000); // ⏳ Delay video by 1s
-    return () => clearTimeout(timer);
+    if ("requestIdleCallback" in window) {
+      (window as any).requestIdleCallback(() => setShowVideo(true));
+    } else {
+      setTimeout(() => setShowVideo(true), 1000); // fallback
+    }
   }, []);
 
   return (
@@ -28,7 +31,6 @@ const Hero = () => {
       </div>
 
       {/* Centered GIF */}
-      {showVideo && (
         <div className="absolute inset-0 flex justify-center items-center pointer-events-none mt-36">
           {/* <Image
           src="/setup.gif"
@@ -38,20 +40,32 @@ const Hero = () => {
           className="object-contain mix-blend-screen"
           unoptimized={true}
         /> */}
-          <video
-            autoPlay
-            loop
-            muted
-            playsInline
-            preload="auto"
-            poster="/fallback.webp"
-            className="object-contain mix-blend-screen w-[500px] h-[500px]"
-          >
-            <source src="/setup.webm" type="video/webm" />
-            Your browser does not support the video tag.
-          </video>
+          {!showVideo ? (
+            // Static image for fast LCP
+            <Image
+              src="/fallback.webp"
+              alt="Hero Animation Fallback"
+              width={500}
+              height={500}
+              className="object-contain mix-blend-screen"
+              priority // Important for LCP
+            />
+          ) : (
+            // Video loaded after LCP
+            <video
+              autoPlay
+              loop
+              muted
+              playsInline
+              preload="auto"
+              poster="/fallback.webp"
+              className="object-contain mix-blend-screen w-[500px] h-[500px]"
+            >
+              <source src="/setup.webm" type="video/webm" />
+              Your browser does not support the video tag.
+            </video>
+          )}
         </div>
-      )}
 
       {/* <ComputersCanvas /> */}
 
