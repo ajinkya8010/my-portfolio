@@ -44,10 +44,10 @@ const Hero = () => {
             muted
             playsInline
             preload="auto"
-            poster="/fallback.jpg"
+            poster="/fallback.webp"
             className="object-contain mix-blend-screen w-[500px] h-[500px]"
           >
-            <source src="/setup.mp4" type="video/mp4" />
+            <source src="/setup.webm" type="video/webm" />
             Your browser does not support the video tag.
           </video>
         </div>
