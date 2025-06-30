@@ -26,9 +26,9 @@ const config: Config = {
 			screens: {
 				xs: "450px",
 			},
-			backgroundImage: {
-				"hero-pattern": "url('/herobg.webp')",
-			},
+			// backgroundImage: {
+			// 	"hero-pattern": "url('/herobg.webp')",
+			// },
 			animation: {
         		wiggle: 'wiggle 0.3s ease-in-out',
       		},
