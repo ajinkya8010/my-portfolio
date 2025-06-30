@@ -3,6 +3,7 @@ import { motion } from "framer-motion";
 import React, { useEffect, useState } from "react";
 import { ComputersCanvas } from "./canvas";
 import Image from "next/image";
+import Particles from "./Particles/Particles";
 
 const Hero = () => {
   const [showVideo, setShowVideo] = useState(false);
@@ -17,6 +18,7 @@ const Hero = () => {
 
   return (
     <section className="relative w-full h-screen mx-auto">
+      <Particles />
       <div className="paddingX absolute inset-0 top-[120px] max-w-7xl mx-auto flex flex-row items-start gap-5">
         <div className="flex flex-col justify-center items-center mt-5">
           <div className="w-5 h-5 rounded-full bg-[#915EFF] " />
@@ -31,8 +33,8 @@ const Hero = () => {
       </div>
 
       {/* Centered GIF */}
-        <div className="absolute inset-0 flex justify-center items-center pointer-events-none mt-36">
-          {/* <Image
+      <div className="absolute inset-0 flex justify-center items-center pointer-events-none mt-36">
+        {/* <Image
           src="/setup.gif"
           alt="Hero Animation"
           width={500}
@@ -40,32 +42,32 @@ const Hero = () => {
           className="object-contain mix-blend-screen"
           unoptimized={true}
         /> */}
-          {!showVideo ? (
-            // Static image for fast LCP
-            <Image
-              src="/fallback.webp"
-              alt="Hero Animation Fallback"
-              width={500}
-              height={500}
-              className="object-contain mix-blend-screen"
-              priority // Important for LCP
-            />
-          ) : (
-            // Video loaded after LCP
-            <video
-              autoPlay
-              loop
-              muted
-              playsInline
-              preload="auto"
-              poster="/fallback.webp"
-              className="object-contain mix-blend-screen w-[500px] h-[500px]"
-            >
-              <source src="/setup.webm" type="video/webm" />
-              Your browser does not support the video tag.
-            </video>
-          )}
-        </div>
+        {!showVideo ? (
+          // Static image for fast LCP
+          <Image
+            src="/fallback.webp"
+            alt="Hero Animation Fallback"
+            width={500}
+            height={500}
+            className="object-contain mix-blend-screen"
+            priority // Important for LCP
+          />
+        ) : (
+          // Video loaded after LCP
+          <video
+            autoPlay
+            loop
+            muted
+            playsInline
+            preload="auto"
+            poster="/fallback.webp"
+            className="object-contain mix-blend-screen w-[500px] h-[500px]"
+          >
+            <source src="/setup.webm" type="video/webm" />
+            Your browser does not support the video tag.
+          </video>
+        )}
+      </div>
 
       {/* <ComputersCanvas /> */}
 
