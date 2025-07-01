@@ -9,7 +9,6 @@ import Works from './Works';
 import Feedbacks from './Feedbacks';
 import Contact from './Contact';
 import SocialLinks from './Social';
-import CustomScrollbar from './CustomScrollbar';
 
 export {
   Hero,
@@ -22,7 +21,6 @@ export {
   Works,
   Feedbacks,
   Contact,
-  CustomScrollbar,
   EarthCanvas,
   BallCanvas,
   ComputersCanvas,
