@@ -1,3 +1,4 @@
+import dynamic from "next/dynamic";
 import {
   About,
   Contact,
@@ -7,9 +8,14 @@ import {
   Navbar,
   Tech,
   Works,
-  StarsCanvas,
   SocialLinks,
 } from "./components";
+
+// Lazy load StarsCanvas
+const StarsCanvas = dynamic(() => import("./components/canvas/Stars"), {
+  ssr: false,
+  loading: () => <></>, // optional placeholder
+});
 
 export default function Home() {
   return (
