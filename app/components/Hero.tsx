@@ -2,16 +2,10 @@
 import { motion } from "framer-motion";
 import React, { useEffect, useState } from "react";
 import Image from "next/image";
-import dynamic from "next/dynamic";
 
-// Dynamically import Particles without SSR
-const LazyParticles = dynamic(() => import("./Particles/Particles"), {
-  ssr: false,
-});
 
 const Hero = () => {
   const [showVideo, setShowVideo] = useState(false);
-  const [showParticles, setShowParticles] = useState(false);
 
   useEffect(() => {
     const isDesktop = window.innerWidth > 768;
@@ -19,19 +13,16 @@ const Hero = () => {
     if ("requestIdleCallback" in window) {
       (window as any).requestIdleCallback(() => {
         setShowVideo(true);
-        if (isDesktop) setShowParticles(true);
       });
     } else {
       setTimeout(() => {
         setShowVideo(true);
-        if (isDesktop) setShowParticles(true);
       }, 1000);
     }
   }, []);
 
   return (
     <section className="relative w-full h-screen mx-auto">
-      {showParticles && <LazyParticles />}
 
       <div className="paddingX absolute inset-0 top-[120px] max-w-7xl mx-auto flex flex-row items-start gap-5">
         <div className="flex flex-col justify-center items-center mt-5">
