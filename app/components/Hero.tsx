@@ -3,13 +3,10 @@ import { motion } from "framer-motion";
 import React, { useEffect, useState } from "react";
 import Image from "next/image";
 
-
 const Hero = () => {
   const [showVideo, setShowVideo] = useState(false);
 
   useEffect(() => {
-    const isDesktop = window.innerWidth > 768;
-
     if ("requestIdleCallback" in window) {
       (window as any).requestIdleCallback(() => {
         setShowVideo(true);
@@ -23,7 +20,6 @@ const Hero = () => {
 
   return (
     <section className="relative w-full h-screen mx-auto">
-
       <div className="paddingX absolute inset-0 top-[120px] max-w-7xl mx-auto flex flex-row items-start gap-5">
         <div className="flex flex-col justify-center items-center mt-5">
           <div className="w-5 h-5 rounded-full bg-[#915EFF]" />
@@ -38,13 +34,13 @@ const Hero = () => {
       </div>
 
       {/* Hero Video or Fallback */}
-      <div className="absolute inset-0 flex justify-center items-center pointer-events-none mt-36">
+      <div className="absolute inset-0 flex justify-center items-center pointer-events-none mt-36 ml-8">
         {!showVideo ? (
           <Image
             src="/fallback.webp"
             alt="Hero Animation Fallback"
-            width={500}
-            height={500}
+            width={650}
+            height={650}
             className="object-contain mix-blend-screen"
             priority
           />
@@ -56,7 +52,7 @@ const Hero = () => {
             playsInline
             preload="auto"
             poster="/fallback.webp"
-            className="object-contain mix-blend-screen w-[500px] h-[500px]"
+            className="object-contain mix-blend-screen w-[650px] h-[650px]"
           >
             <source src="/setup.webm" type="video/webm" />
             Your browser does not support the video tag.
@@ -65,7 +61,7 @@ const Hero = () => {
       </div>
 
       {/* Scroll Indicator */}
-      <div className="absolute xs:bottom-10 bottom-32 w-full flex justify-center items-center">
+      <div className="absolute xs:bottom-8 bottom-32 w-full flex justify-center items-center">
         <a href="#about" className="group">
           <motion.div
             animate={{ y: [0, 8, 0] }}
