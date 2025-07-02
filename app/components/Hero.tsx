@@ -42,6 +42,7 @@ const Hero = () => {
             width={650}
             height={650}
             className="object-contain mix-blend-screen"
+            loading="eager"
             priority
           />
         ) : (
