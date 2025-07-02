@@ -7,8 +7,6 @@ const Hero = () => {
   const [showVideo, setShowVideo] = useState(false);
 
   useEffect(() => {
-    const isDesktop = window.innerWidth > 768;
-
     if ("requestIdleCallback" in window) {
       (window as any).requestIdleCallback(() => {
         setShowVideo(true);
