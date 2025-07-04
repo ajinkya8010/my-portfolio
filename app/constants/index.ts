@@ -19,10 +19,10 @@ export const navLinks = [
 		id: "contact",
 		title: "Contact",
 	},
-	// {
-	// 	id: "blogs",
-	// 	title: "Blogs",
-	// },
+	{
+		id: "blogs",
+		title: "Blogs",
+	},
 ];
 
 const services = [

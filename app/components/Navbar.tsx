@@ -78,7 +78,7 @@ const Navbar = () => {
               } hover:text-white text-[18px] font-medium cursor-pointer`}
             >
               {nav.title.toLowerCase() === "blogs" ? (
-                <Link href="/blog">{nav.title}</Link> // Navigate to /blog
+                <Link href="/blogs">{nav.title}</Link> // Navigate to /blog
               ) : (
                 <Link href={`#${nav.id}`}>{nav.title}</Link> // Scroll to section
               )}
