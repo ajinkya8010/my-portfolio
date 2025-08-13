@@ -403,7 +403,7 @@ const projects :{
 		image: "/projectimg/ec.png",
 		source_code_link: "https://github.com/ajinkya8010/ECommerce-Frontend-React",
 		platform: "Github",
-		deploy_link: "https://ajinkya8010.github.io/ECommerce-Frontend-React/",
+		deploy_link: "https://ecommerce-frontend-react-wsfn.onrender.com",
 	},
 	{
 		name: "RAG App for PDFs",
