@@ -105,11 +105,21 @@ const technologies = [
 
 const experiences = [
 	{
+		title: "Associate Software Engineer",
+		company_name: "QED42",
+		icon: "/company/qed42.webp",
+		iconBg: "#ffffff",
+		date: "Aug 2025 -  present",
+		points: [
+			"Worked in Agile/Scrum teams on client-facing projects, reviewing 5–6 reported issues to differentiate valid bugs from user errors, creating tickets with estimated timelines, and coordinating fixes."
+		],
+	},
+	{
 		title: "Intern Web Developer",
 		company_name: "QED42",
 		icon: "/company/qed42.webp",
 		iconBg: "#ffffff",
-		date: "2025 -  present",
+		date: "Feb 2025 - Aug 2025",
 		points: [
 			"Contributed to Drupal Core with multiple merge requests, including bug fixes and new features.",
 			"Developed headless CMS solutions by integrating Drupal with modern frontends like Next.js for dynamic web applications",
