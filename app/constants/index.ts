@@ -276,6 +276,45 @@ const projects :{
 	platform?: "Vercel"| "Web" | "Render" | "Github" | "Android"
 }[] = [
 	{
+		name: "Proximity based real-time alert system",
+		description:
+			"Redis offline queuing, geospatial queries, and WebSocket notifications. MERN stack + Socket.IO + Redis pub/sub architecture for scalable location-based alerting.",
+		tags: [
+			{
+				name: "react.js",
+				color: "blue-text-gradient",
+			},
+			{
+				name: "tailwind",
+				color: "green-text-gradient",
+			},
+			{
+				name: "javascript",
+				color: "orange-text-gradient",
+			},
+			{
+				name: "redis",
+				color: "gold-text-gradient",
+			},
+			{
+				name: "web-socket",
+				color: "purple-text-gradient",
+			},
+			{
+				name: "express.js",
+				color: "sunset-text-gradient",
+			},
+			{
+				name: "mongodb",
+				color: "pink-text-gradient",
+			},
+		],
+		image: "/projectimg/alert.webp",
+		source_code_link: "https://github.com/ajinkya8010/proximity-alert-system",
+		platform: "Render",
+		deploy_link: "https://proximity-alert-system-1.onrender.com",
+	},
+	{
 		name: "Data-Driven Traffic Analysis System for PMC",
 		description:
 			"A comprehensive web portal for urban traffic analysis integrating real-time insights, citizen reporting, and ML verification to mitigate traffic issues.",
@@ -378,42 +417,15 @@ const projects :{
 				name: "jwt",
 				color: "purple-text-gradient",
 			},
+			{
+				name: "indexedDB",
+				color: "sunset-text-gradient",
+			},
 		],
 		image: "/projectimg/realestate.webp",
 		source_code_link: "https://github.com/ajinkya8010/real-estate-full-stack-app",
 		platform: "Render",
 		deploy_link: "https://real-estate-frontend-59om.onrender.com",
-	},
-	{
-		name: "Ecommerce Frontend",
-		description:
-			"A responsive e-commerce frontend built with React and plain CSS, featuring product listings, cart functionality, and a clean user interface. First project in my journey of web development.",
-		tags: [
-			{
-				name: "react.js",
-				color: "blue-text-gradient",
-			},
-			{
-				name: "css",
-				color: "green-text-gradient",
-			},
-			{
-				name: "javascript",
-				color: "orange-text-gradient",
-			},
-			{
-				name: "context-api",
-				color: "gold-text-gradient",
-			},
-			{
-				name: "state-management",
-				color: "pink-text-gradient",
-			},
-		],
-		image: "/projectimg/ec.png",
-		source_code_link: "https://github.com/ajinkya8010/ECommerce-Frontend-React",
-		platform: "Github",
-		deploy_link: "https://ecommerce-frontend-react-wsfn.onrender.com",
 	},
 	{
 		name: "RAG App for PDFs",
