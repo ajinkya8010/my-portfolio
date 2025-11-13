@@ -3,7 +3,7 @@ title: "Building an AI-Powered Chrome Extension"
 date: "2024-11-05"
 excerpt: "How I created an intelligent tab grouper that uses LLMs to automatically organize your browser tabs into semantic categories."
 tags: ["JavaScript", "Chrome Extension", "AI/ML", "Productivity"]
-image: "/blog/chrome-ext-cover.jpg"
+image: "/blog/covers/chrome-extension-ai.jpg"
 readTime: "6 min read"
 ---
 

@@ -3,7 +3,7 @@ title: "Building a Simple RAG Application with Python"
 date: "2024-11-10"
 excerpt: "Learn how to build a Retrieval-Augmented Generation app that can answer questions from your PDF documents using semantic search and LLMs."
 tags: ["AI/ML", "Python", "RAG", "LLM"]
-image: "/blog/rag-cover.jpg"
+image: "/blog/covers/getting-started-with-rag.jpg"
 readTime: "8 min read"
 ---
 

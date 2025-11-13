@@ -18,8 +18,9 @@ const BlogSection = () => {
           <p className="sectionSubText">What I write about</p>
           <h2 className="sectionHeadText">Latest Blog Posts</h2>
           <p className="mt-4 text-secondary text-[17px] max-w-3xl mx-auto leading-[30px]">
-            I share insights on Software Engineering, AI/ML, and building scalable
-            applications. From technical deep-dives to practical tutorials.
+            I share insights on Software Engineering, AI/ML, and building
+            scalable applications. From technical deep-dives to practical
+            tutorials.
           </p>
         </motion.div>
 
@@ -43,9 +44,33 @@ const BlogSection = () => {
                     </span>
                   </div>
 
-                  {/* Image placeholder */}
-                  <div className="w-full h-40 bg-gradient-to-br from-purple-500/20 to-blue-500/20 rounded-xl mb-4 flex items-center justify-center">
-                    <div className="text-3xl opacity-50">📝</div>
+                  {/* Thumbnail Image */}
+                  <div className="w-full h-40 rounded-xl mb-4 overflow-hidden bg-gradient-to-br from-purple-500/20 to-blue-500/20">
+                    {post.image ? (
+                      <img
+                        src={post.image}
+                        alt={post.title}
+                        className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                        onError={(e) => {
+                          e.currentTarget.style.display = "none";
+                          e.currentTarget.nextElementSibling?.classList.remove(
+                            "hidden"
+                          );
+                        }}
+                      />
+                    ) : null}
+                    <div
+                      className={`w-full h-full flex items-center justify-center ${
+                        post.image ? "hidden" : ""
+                      }`}
+                    >
+                      <div className="text-center">
+                        <div className="text-3xl opacity-50 mb-2">📝</div>
+                        <div className="text-xs text-gray-500 opacity-75">
+                          {post.category}
+                        </div>
+                      </div>
+                    </div>
                   </div>
 
                   {/* Content */}

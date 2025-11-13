@@ -3,7 +3,7 @@ title: "Building a Real-Time Location Alert System"
 date: "2024-10-28"
 excerpt: "Deep dive into creating a scalable proximity-based alert system using Redis, WebSockets, and geospatial queries for real-time notifications."
 tags: ["Node.js", "Redis", "WebSocket", "Geospatial", "Real-time"]
-image: "/blog/location-alerts-cover.jpg"
+image: "/blog/covers/real-time-location-alerts.jpg"
 readTime: "10 min read"
 ---
 

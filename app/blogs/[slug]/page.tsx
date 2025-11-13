@@ -1,5 +1,7 @@
-import { getBlogPost, getAllBlogSlugs } from "../../lib/blog";
+import { getBlogPost, getAllBlogSlugs, getAllBlogPosts } from "../../lib/blog";
 import BlogNavbar from "../../components/BlogNavbar";
+import ReadingProgress from "../../components/ReadingProgress";
+import RelatedPosts from "../../components/RelatedPosts";
 import { notFound } from "next/navigation";
 import { Metadata } from "next";
 import Link from "next/link";
@@ -37,6 +39,7 @@ export async function generateMetadata({
 
 export default async function BlogPostPage({ params }: BlogPostPageProps) {
   const post = await getBlogPost(params.slug);
+  const allPosts = await getAllBlogPosts();
 
   if (!post) {
     notFound();
@@ -44,6 +47,7 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
 
   return (
     <div className="min-h-screen bg-primary">
+      <ReadingProgress />
       <BlogNavbar />
 
       <main className="max-w-4xl mx-auto px-6 py-12 pt-32">
@@ -106,6 +110,9 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
             className="blog-content-readable"
           />
         </article>
+
+        {/* Related Posts */}
+        <RelatedPosts currentPost={post} allPosts={allPosts} />
 
         {/* Footer */}
         <footer className="mt-16 pt-8 border-t border-gray-800/50">
