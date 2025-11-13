@@ -31,7 +31,11 @@ export default function RelatedPosts({
       .filter((post) => post.slug !== currentPost.slug)
       .filter((post) => !relatedPosts.some((rp) => rp.slug === post.slug))
       .sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime())
-      .slice(0, 3 - relatedPosts.length);
+      .slice(0, 3 - relatedPosts.length)
+      .map((post) => ({
+        ...post,
+        sharedTags: 0, // Latest posts have 0 shared tags
+      }));
 
     relatedPosts.push(...latestPosts);
   }

@@ -249,7 +249,7 @@ export default function BlogList({ posts }: BlogListProps) {
                     </div>
                   ) : (
                     <div className="p-4 text-center text-gray-400">
-                      No tags found matching "{searchTerm}"
+                      No tags found matching &quot;{searchTerm}&quot;
                     </div>
                   )}
                 </div>
