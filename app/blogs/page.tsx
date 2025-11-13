@@ -35,7 +35,7 @@ export default async function BlogsPage() {
             & Articles
           </h1>
           <p className="text-xl text-secondary max-w-3xl mx-auto leading-relaxed">
-            Sharing insights on software development, AI/ML, and tech in
+            Sharing insights on Software Engineering, AI/ML, and tech in
             general. From building scalable applications to exploring
             cutting-edge technologies.
           </p>

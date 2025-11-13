@@ -3,7 +3,6 @@
 import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
-import ResumeButton from "./ResumeButton";
 
 export default function BlogNavbar() {
   const [toggle, setToggle] = useState(false);
@@ -12,22 +11,20 @@ export default function BlogNavbar() {
     <nav className="paddingX w-full flex items-center py-5 fixed top-0 z-20 bg-primary">
       <div className="w-full flex justify-between items-center max-w-7xl mx-auto">
         {/* Left: Logo/Name - Same as main navbar */}
-        <div className="flex items-center gap-2 group cursor-pointer">
-          <Link href="/">
-            <Image
-              src="/logo.webp"
-              width={70}
-              height={70}
-              alt="logo"
-              priority
-              className="object-contain transition-transform duration-300 group-hover:scale-110"
-            />
-          </Link>
+        <Link href="/" className="flex items-center gap-2 group cursor-pointer">
+          <Image
+            src="/logo.webp"
+            width={70}
+            height={70}
+            alt="logo"
+            priority
+            className="object-contain transition-transform duration-300 group-hover:scale-110"
+          />
 
           <p className="text-white text-[18px] font-bold flex transition-all duration-300 group-hover:animate-wiggle">
             Ajinkya &nbsp; <span className="sm:block hidden "></span>
           </p>
-        </div>
+        </Link>
 
         {/* Center: Back to Portfolio */}
         <div className="hidden sm:block">

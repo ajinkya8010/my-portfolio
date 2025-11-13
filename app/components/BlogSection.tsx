@@ -18,7 +18,7 @@ const BlogSection = () => {
           <p className="sectionSubText">What I write about</p>
           <h2 className="sectionHeadText">Latest Blog Posts</h2>
           <p className="mt-4 text-secondary text-[17px] max-w-3xl mx-auto leading-[30px]">
-            I share insights on web development, AI/ML, and building scalable
+            I share insights on Software Engineering, AI/ML, and building scalable
             applications. From technical deep-dives to practical tutorials.
           </p>
         </motion.div>
