@@ -1,0 +1,305 @@
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  scroll-behavior: smooth;
+  color-scheme: dark;
+}
+
+.hash-span {
+  margin-top: -100px;
+  padding-bottom: 100px;
+  display: block;
+}
+
+.black-gradient {
+  background: #000000; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #434343,
+    #000000
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #434343,
+    #000000
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.violet-gradient {
+  background: #804dee;
+  background: linear-gradient(-90deg, #804dee 0%, rgba(60, 51, 80, 0) 100%);
+  background: -webkit-linear-gradient(
+    -90deg,
+    #804dee 0%,
+    rgba(60, 51, 80, 0) 100%
+  );
+}
+
+.green-pink-gradient {
+  background: "#00cea8";
+  background: linear-gradient(90.13deg, #00cea8 1.9%, #bf61ff 97.5%);
+  background: -webkit-linear-gradient(-90.13deg, #00cea8 1.9%, #bf61ff 97.5%);
+}
+
+.orange-text-gradient {
+  background: #f12711; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to top,
+    #f12711,
+    #f5af19
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to top,
+    #f12711,
+    #f5af19
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.green-text-gradient {
+  background: #11998e; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to top,
+    #11998e,
+    #38ef7d
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to top,
+    #11998e,
+    #38ef7d
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.blue-text-gradient {
+  /* background: -webkit-linear-gradient(#eee, #333); */
+  background: #56ccf2; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to top,
+    #2f80ed,
+    #56ccf2
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to top,
+    #2f80ed,
+    #56ccf2
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.pink-text-gradient {
+  background: #ec008c; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to top,
+    #ec008c,
+    #fc6767
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to top,
+    #ec008c,
+    #fc6767
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.purple-text-gradient {
+  background: #667eea; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to top,
+    #667eea,
+    #764ba2
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to top,
+    #667eea,
+    #764ba2
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.gold-text-gradient {
+  background: #f7971e; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to top,
+    #ffd200,
+    #f7971e
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to top,
+    #ffd200,
+    #f7971e
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.sunset-text-gradient {
+  background: #ff7e5f; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to top,
+    #feb47b,
+    #ff7e5f
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to top,
+    #feb47b,
+    #ff7e5f
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Blog-specific styles */
+.blog-content {
+  @apply text-gray-300 leading-relaxed;
+}
+
+.blog-content-readable {
+  @apply text-gray-200 leading-relaxed;
+  font-size: 1.1rem;
+  line-height: 1.8;
+}
+
+.blog-content h1,
+.blog-content h2,
+.blog-content h3,
+.blog-content h4,
+.blog-content h5,
+.blog-content h6,
+.blog-content-readable h1,
+.blog-content-readable h2,
+.blog-content-readable h3,
+.blog-content-readable h4,
+.blog-content-readable h5,
+.blog-content-readable h6 {
+  @apply text-white font-bold mt-8 mb-4;
+}
+
+/* Hide the first H1 in markdown content to avoid duplication */
+.blog-content-readable h1:first-of-type {
+  display: none !important;
+}
+
+.blog-content h1,
+.blog-content-readable h1 {
+  @apply text-3xl;
+}
+
+.blog-content h2,
+.blog-content-readable h2 {
+  @apply text-2xl;
+}
+
+.blog-content h3,
+.blog-content-readable h3 {
+  @apply text-xl;
+}
+
+.blog-content p,
+.blog-content-readable p {
+  @apply mb-6;
+  color: #e5e7eb;
+  line-height: 1.8;
+}
+
+.blog-content ul,
+.blog-content ol,
+.blog-content-readable ul,
+.blog-content-readable ol {
+  @apply mb-6 ml-6;
+}
+
+.blog-content li,
+.blog-content-readable li {
+  @apply mb-3;
+  color: #e5e7eb;
+  line-height: 1.7;
+}
+
+.blog-content a,
+.blog-content-readable a {
+  @apply text-purple-400 hover:text-purple-300 underline;
+}
+
+.blog-content blockquote,
+.blog-content-readable blockquote {
+  @apply border-l-4 border-purple-500 pl-6 my-6 italic;
+  color: #d1d5db;
+  background: rgba(139, 92, 246, 0.05);
+  padding: 1rem 1.5rem;
+  border-radius: 0.5rem;
+}
+
+.blog-content pre,
+.blog-content-readable pre {
+  @apply bg-gray-900 rounded-lg p-4 overflow-x-auto mb-6 border border-gray-700;
+  background: #0f172a !important;
+}
+
+.blog-content code,
+.blog-content-readable code {
+  @apply bg-gray-800 px-2 py-1 rounded text-sm font-mono text-purple-300;
+  background: #1e293b !important;
+}
+
+.blog-content pre code,
+.blog-content-readable pre code {
+  @apply bg-transparent p-0;
+  color: #e2e8f0 !important;
+  background: transparent !important;
+}
+
+.blog-content img,
+.blog-content-readable img {
+  @apply rounded-lg my-6 max-w-full h-auto;
+}
+
+.blog-content table,
+.blog-content-readable table {
+  @apply w-full border-collapse border border-gray-700 my-6;
+}
+
+.blog-content th,
+.blog-content td,
+.blog-content-readable th,
+.blog-content-readable td {
+  @apply border border-gray-700 px-4 py-2;
+}
+
+.blog-content th,
+.blog-content-readable th {
+  @apply bg-gray-800 font-semibold text-white;
+}
+
+/* Better strong/bold text */
+.blog-content-readable strong,
+.blog-content-readable b {
+  color: #f8fafc;
+  font-weight: 600;
+}
+
+/* Line clamp utilities */
+.line-clamp-2 {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.line-clamp-3 {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
