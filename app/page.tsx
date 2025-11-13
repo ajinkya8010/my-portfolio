@@ -9,6 +9,7 @@ import {
   Tech,
   Works,
   SocialLinks,
+  BlogSection,
 } from "./components";
 
 // Lazy load StarsCanvas
@@ -29,6 +30,7 @@ export default function Home() {
       <SocialLinks />
       <Experience />
       <Works />
+      <BlogSection />
       <Feedbacks />
       <div className="relative z-0">
         <Contact />

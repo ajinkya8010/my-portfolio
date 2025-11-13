@@ -488,4 +488,40 @@ const projects :{
 ];
 
 
+// Blog-related constants
+export const blogCategories = [
+	"Web Development",
+	"AI/ML", 
+	"JavaScript",
+	"React/Next.js",
+	"Node.js",
+	"Chrome Extensions",
+	"Real-time Systems",
+	"Productivity Tools"
+];
+
+export const featuredBlogPosts = [
+	{
+		slug: "real-time-location-alerts",
+		title: "Building a Real-Time Location Alert System",
+		excerpt: "Deep dive into creating a scalable proximity-based alert system using Redis, WebSockets, and geospatial queries.",
+		category: "Real-time Systems",
+		image: "/blog/covers/real-time-location-alerts.jpg"
+	},
+	{
+		slug: "chrome-extension-ai", 
+		title: "Building an AI-Powered Chrome Extension",
+		excerpt: "How I created an intelligent tab grouper that uses LLMs to automatically organize browser tabs.",
+		category: "AI/ML",
+		image: "/blog/covers/chrome-extension-ai.jpg"
+	},
+	{
+		slug: "getting-started-with-rag",
+		title: "Building a Simple RAG Application with Python", 
+		excerpt: "Learn how to build a Retrieval-Augmented Generation app that can answer questions from PDF documents.",
+		category: "AI/ML",
+		image: "/blog/covers/getting-started-with-rag.jpg"
+	}
+];
+
 export { services, technologies, experiences, testimonials, projects };

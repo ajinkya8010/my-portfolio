@@ -35,7 +35,8 @@ const Navbar = () => {
         {/* biome-ignore lint/a11y/useKeyWithClickEvents: <explanation> */}
         <div
           className="flex items-center gap-2 group cursor-pointer"
-          onClick={() => {7
+          onClick={() => {
+            7;
             window.scrollTo(0, 0);
           }}
         >
@@ -73,9 +74,7 @@ const Navbar = () => {
           {navLinks.map((nav) => (
             <li
               key={nav.id}
-              className={`${
-               "text-secondary"
-              } hover:text-white text-[18px] font-medium cursor-pointer`}
+              className={`${"text-secondary"} hover:text-white text-[18px] font-medium cursor-pointer`}
             >
               {nav.title.toLowerCase() === "blogs" ? (
                 <Link href="/blogs">{nav.title}</Link> // Navigate to /blog
@@ -110,14 +109,16 @@ const Navbar = () => {
                 // biome-ignore lint/a11y/useKeyWithClickEvents: <explanation>
                 <li
                   key={nav.id}
-                  className={`font-poppins font-medium cursor-pointer text-[16px] ${
-                  "text-secondary"
-                  }`}
+                  className={`font-poppins font-medium cursor-pointer text-[16px] ${"text-secondary"}`}
                   onClick={() => {
                     setToggle(!toggle);
                   }}
                 >
-                  <Link href={`#${nav.id}`}>{nav.title}</Link>
+                  {nav.title.toLowerCase() === "blogs" ? (
+                    <Link href="/blogs">{nav.title}</Link>
+                  ) : (
+                    <Link href={`#${nav.id}`}>{nav.title}</Link>
+                  )}
                 </li>
               ))}
               <li>

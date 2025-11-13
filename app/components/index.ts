@@ -8,6 +8,7 @@ import Works from './Works';
 import Feedbacks from './Feedbacks';
 import Contact from './Contact';
 import SocialLinks from './Social';
+import BlogSection from './BlogSection';
 
 export {
   Hero,
@@ -20,4 +21,5 @@ export {
   Works,
   Feedbacks,
   Contact,
+  BlogSection,
 }
