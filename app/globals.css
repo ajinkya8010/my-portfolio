@@ -267,19 +267,82 @@
 
 .blog-content table,
 .blog-content-readable table {
-  @apply w-full border-collapse border border-gray-700 my-6;
+  @apply w-full border-collapse my-6;
+  border: 1px solid #374151;
+  background: #1f2937;
+  border-radius: 0.5rem;
+  overflow: hidden;
 }
 
 .blog-content th,
 .blog-content td,
 .blog-content-readable th,
 .blog-content-readable td {
-  @apply border border-gray-700 px-4 py-2;
+  @apply px-4 py-3;
+  border: 1px solid #374151;
+  text-align: left;
 }
 
 .blog-content th,
 .blog-content-readable th {
   @apply bg-gray-800 font-semibold text-white;
+  background: #374151;
+}
+
+.blog-content td,
+.blog-content-readable td {
+  @apply text-gray-200;
+  background: #1f2937;
+}
+
+/* Prose table overrides for better styling */
+.prose table {
+  @apply w-full border-collapse my-6;
+  border: 1px solid #374151 !important;
+  background: #1f2937 !important;
+  border-radius: 0.5rem !important;
+  overflow: hidden !important;
+}
+
+.prose th {
+  @apply px-4 py-3 bg-gray-700 font-semibold text-white;
+  border: 1px solid #374151 !important;
+  background: #374151 !important;
+  text-align: left !important;
+}
+
+.prose td {
+  @apply px-4 py-3 text-gray-200;
+  border: 1px solid #374151 !important;
+  background: #1f2937 !important;
+}
+
+/* More specific prose overrides */
+.prose-invert table {
+  border: 1px solid #374151 !important;
+  background: #1f2937 !important;
+  border-radius: 0.5rem !important;
+  overflow: hidden !important;
+}
+
+.prose-invert th {
+  border: 1px solid #374151 !important;
+  background: #374151 !important;
+  color: #ffffff !important;
+  font-weight: 600 !important;
+  padding: 0.75rem 1rem !important;
+}
+
+.prose-invert td {
+  border: 1px solid #374151 !important;
+  background: #1f2937 !important;
+  color: #e5e7eb !important;
+  padding: 0.75rem 1rem !important;
+}
+
+/* Ensure table text is visible */
+.prose-invert table * {
+  color: inherit !important;
 }
 
 /* Better strong/bold text */

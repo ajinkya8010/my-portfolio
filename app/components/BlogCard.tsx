@@ -24,7 +24,7 @@ export default function BlogCard({ post, index }: BlogCardProps) {
       <Link href={`/blogs/${post.slug}`}>
         <article className="bg-tertiary rounded-2xl p-6 h-full hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border border-gray-800/20">
           {/* Thumbnail Image */}
-          <div className="w-full h-48 rounded-xl mb-4 overflow-hidden bg-gradient-to-br from-purple-500/20 to-blue-500/20">
+          <div className="w-full aspect-[2/1] rounded-xl mb-4 overflow-hidden bg-gradient-to-br from-purple-500/20 to-blue-500/20">
             {post.image && !imageError ? (
               <Image
                 src={post.image}

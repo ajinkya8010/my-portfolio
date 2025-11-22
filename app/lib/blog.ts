@@ -3,6 +3,7 @@ import path from 'path';
 import matter from 'gray-matter';
 import { remark } from 'remark';
 import html from 'remark-html';
+import remarkGfm from 'remark-gfm';
 
 const blogsDirectory = path.join(process.cwd(), 'content/blogs');
 
@@ -19,22 +20,24 @@ export interface BlogPost {
 
 export async function getAllBlogPosts(): Promise<BlogPost[]> {
   const fileNames = fs.readdirSync(blogsDirectory);
-  const allPostsData = fileNames.map((fileName) => {
-    const slug = fileName.replace(/\.md$/, '');
-    const fullPath = path.join(blogsDirectory, fileName);
-    const fileContents = fs.readFileSync(fullPath, 'utf8');
-    const matterResult = matter(fileContents);
+  const allPostsData = fileNames
+    .filter((fileName) => fileName.endsWith('.md'))
+    .map((fileName) => {
+      const slug = fileName.replace(/\.md$/, '');
+      const fullPath = path.join(blogsDirectory, fileName);
+      const fileContents = fs.readFileSync(fullPath, 'utf8');
+      const matterResult = matter(fileContents);
 
-    return {
-      slug,
-      title: matterResult.data.title,
-      date: matterResult.data.date,
-      excerpt: matterResult.data.excerpt,
-      tags: matterResult.data.tags,
-      image: matterResult.data.image,
-      readTime: matterResult.data.readTime,
-    };
-  });
+      return {
+        slug,
+        title: matterResult.data.title,
+        date: matterResult.data.date,
+        excerpt: matterResult.data.excerpt,
+        tags: matterResult.data.tags,
+        image: matterResult.data.image,
+        readTime: matterResult.data.readTime,
+      };
+    });
 
   return allPostsData.sort((a, b) => (a.date < b.date ? 1 : -1));
 }
@@ -49,6 +52,7 @@ export async function getBlogPost(slug: string): Promise<BlogPost | null> {
     const contentWithoutFirstH1 = matterResult.content.replace(/^#\s+.*$/m, '');
 
     const processedContent = await remark()
+      .use(remarkGfm)
       .use(html)
       .process(contentWithoutFirstH1);
     const contentHtml = processedContent.toString();
@@ -70,9 +74,11 @@ export async function getBlogPost(slug: string): Promise<BlogPost | null> {
 
 export function getAllBlogSlugs() {
   const fileNames = fs.readdirSync(blogsDirectory);
-  return fileNames.map((fileName) => ({
-    params: {
-      slug: fileName.replace(/\.md$/, ''),
-    },
-  }));
+  return fileNames
+    .filter((fileName) => fileName.endsWith('.md'))
+    .map((fileName) => ({
+      params: {
+        slug: fileName.replace(/\.md$/, ''),
+      },
+    }));
 }
