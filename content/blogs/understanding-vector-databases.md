@@ -2,7 +2,7 @@
 title: "Understanding Vector Databases: The backbone of Modern AI Search"
 date: "2025-11-22"
 excerpt: "Explore how vector databases are revolutionizing AI applications, from semantic search to RAG systems, and why they're essential for modern AI development."
-tags: ["AI/ML", "Vector Databases", "Machine Learning", "Database"]
+tags: ["AI/ML", "Vector Databases", "Database"]
 image: "/blog/covers/VectorDB.jpg"
 readTime: "7 min read"
 ---
